@@ -6,4 +6,11 @@ describe Calculator do
     let(:op2) { rand(1000) }
     it { expect(calculator.sum(op1, op2)).to eq op1 + op2 }
   end
+
+  context '.sub' do
+    let(:calculator) { Calculator.new }
+    let(:op1) { rand(100) }
+    let(:op2) { rand(1000) }
+    it { expect(calculator.sub(op1, op2)).to eq op1 - op2 }
+  end
 end
