@@ -7,4 +7,8 @@ class Calculator
   def sub(operator1, operator2)
     operator1 - operator2
   end
+
+  def multiply(operator1, operator2)
+    operator1 * operator2
+  end
 end
